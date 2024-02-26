@@ -1,0 +1,63 @@
+//Language Select Element Welcome
+.lg-select {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    select {
+        appearance: none;
+        /* safari */
+        -webkit-appearance: none;
+        /* other styles for aesthetics */
+        width: 100%;
+        font-size: $font-size-lg;
+        padding: 5px 10px 5px 10px;
+        background-color: $bg-color-item;
+        border: 2px solid $border-color-item;
+        border-radius: 0.5rem;
+        color: $font-color-base;
+        font-weight: 800;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+.lg-select::before,
+.lg-select::after {
+  --size: 0.3rem;
+  position: absolute;
+  content: "";
+  right: 1rem;
+  pointer-events: none;
+}
+
+.lg-select::before {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid $font-color-base;
+  top: 40%;
+}
+
+.lg-select::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid $font-color-base;
+  top: 55%;
+}
+//End Language Select Element Welcome
+
+//Welcome Menu Links
+.welcome-menu-link {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    text-decoration: none;
+    color: $font-color-base;
+    font-size: $font-size-lg;
+    font-weight: 800;
+    padding: 5px 10px 5px 10px;
+    background-color: $bg-color-item;
+    border: 2px solid $border-color-item;
+    border-radius: 0.5rem;
+}

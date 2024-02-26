@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[App\Http\Controllers\WelcomeController::class, 'index']);
+Route::post('/language-switch', [App\Http\Controllers\WelcomeController::class, 'languageSwitch'])->name('language.switch');
 
 Auth::routes();
 
