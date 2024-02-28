@@ -7,5 +7,6 @@ return [
     'aj_title' => 'AJ Prijatelj Mreža',
     'aj_p' => 'Da budi blizu vašeg prijatelju',
     'aj_terms' => 'Terms and Conditions',
-    'aj_privacy' => 'Privacy Policy'
+    'aj_privacy' => 'Privacy Policy',
+    'Title' => 'AJ Mreža'
 ];

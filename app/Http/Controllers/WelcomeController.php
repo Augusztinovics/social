@@ -29,4 +29,24 @@ class WelcomeController extends Controller
 
         return redirect()->back()->with(['language_switched' => $lg]);
     }
+
+    /**
+     * Show the terms
+     * 
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function terms()
+    {
+        return view('terms.terms');
+    }
+
+    /**
+     * Show the privacy policy
+     * 
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function privacy()
+    {
+        return view('terms.privacy');
+    }
 }

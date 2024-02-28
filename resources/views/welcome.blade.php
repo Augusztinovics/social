@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>AJ Network</title>
+        <title>{{ __('menu.Title') }}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
                 <div>
                     <img src="{{ asset('img/ajlogo_sm.png') }}" alt="icon" width="32">
                 </div>
-                <p><i>AJ Network</i></p>
+                <p><i>{{ __('menu.Title') }}</i></p>
                 <div class="mb-3">
                     <form action="{{ route('language.switch') }}" method="POST" class="lg-select">
                         @csrf
@@ -61,8 +61,8 @@
             <div class="mt-4">
                 <p>{{ __('menu.aj_p') }}</p>
                 <p>
-                    <a href="#">{{ __('menu.aj_terms') }}</a>
-                    <a href="#" class="ml-3">{{ __('menu.aj_privacy') }}</a>
+                    <a href="{{ route('terms') }}">{{ __('menu.aj_terms') }}</a>
+                    <a href="{{ route('privacy') }}" class="ml-3">{{ __('menu.aj_privacy') }}</a>
                 </p>
             </div>
 

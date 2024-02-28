@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/',[App\Http\Controllers\WelcomeController::class, 'index']);
 Route::post('/language-switch', [App\Http\Controllers\WelcomeController::class, 'languageSwitch'])->name('language.switch');
+Route::get('/terms-and-conditions',[App\Http\Controllers\WelcomeController::class, 'terms'])->name('terms');
+Route::get('/privacy-policy',[App\Http\Controllers\WelcomeController::class, 'privacy'])->name('privacy');
 
 Auth::routes();
 
