@@ -5,11 +5,14 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header text-center">{{ __('Privacy') }}</div>
+                <div class="card-header text-center">{{ __('menu.aj_privacy') }}</div>
 
                 <div class="card-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos temporibus consequatur soluta commodi rerum incidunt exercitationem tenetur sunt, reprehenderit magni vitae, repudiandae autem accusantium cum porro. Ab, praesentium tempora!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex magnam nulla ipsa assumenda vero dolores modi qui itaque, suscipit atque omnis id possimus repellendus dolorem facilis pariatur numquam dolor deserunt?</p>
+                    <h5><strong>{{ __('terms.ph5_1') }}</strong></h5>
+                    <p>{{ __('terms.pp_1a') }}</p>
+                    <p>{{ __('terms.pp_1b') }}</p>
+                    <h5 class="mt-4"><strong>{{ __('terms.ph5_2') }}</strong></h5>
+                    <p>{{ __('terms.pp_2') }}</p>
                 </div>
             </div>
         </div>
