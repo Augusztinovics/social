@@ -4,6 +4,7 @@ return [
     'Login' => 'Prijavi',
     'Register' => 'Registracija',
     'Home' => 'Početna',
+    'Logout' => 'Odjaviti se',
     'aj_title' => 'AJ Prijatelj Mreža',
     'aj_p' => 'Da budi blizu vašeg prijatelju',
     'aj_terms' => 'Uslovi',
@@ -24,5 +25,6 @@ return [
     'verification_link_sent' => 'Nova veza za verifikaciju je poslata na vašu adresu e-pošte.',
     'please_check_your_email_for_link.' => 'Pre nego što nastavite, proverite svoju e-poštu za vezu za verifikaciju.',
     'if_not_receive_the_email' => 'Ako niste primili imejl',
-    'request_another' => 'kliknite ovde da zatražite drugu'
+    'request_another' => 'kliknite ovde da zatražite drugu',
+    'settings' => 'Podešavanja'
 ];

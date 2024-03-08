@@ -4,6 +4,7 @@ return [
     'Login' => 'Bejelentkez',
     'Register' => 'Regisztrál',
     'Home' => 'Haza',
+    'Logout' => 'Kijelentkezés',
     'aj_title' => 'AJ Barát Hálózat',
     'aj_p' => 'Hogy kapcsoladba matadj és megoszd élményeid barátaiddal, ismerőseiddel!',
     'aj_terms' => 'Felhasználási Feltételek',
@@ -24,5 +25,6 @@ return [
     'verification_link_sent' => 'Új ellenőrző linket küldtünk az e-mail címére.',
     'please_check_your_email_for_link.' => 'Mielőtt folytatná, kérjük, ellenőrizze e-mailjében, hogy van-e ellenőrző link.',
     'if_not_receive_the_email' => 'Ha nem kapta meg az e-mailt',
-    'request_another' => 'ide kattintva kérhet másikat'
+    'request_another' => 'ide kattintva kérhet másikat',
+    'settings' => 'Beállítások'
 ];

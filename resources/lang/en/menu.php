@@ -4,6 +4,7 @@ return [
     'Login' => 'Login',
     'Register' => 'Register',
     'Home' => 'Home',
+    'Logout' => 'Logout',
     'aj_title' => 'AJ Friend Network',
     'aj_p' => 'To stay connected and share experience with your friends!',
     'aj_terms' => 'Terms and Conditions',
@@ -24,5 +25,6 @@ return [
     'verification_link_sent' => 'A fresh verification link has been sent to your email address.',
     'please_check_your_email_for_link.' => 'Before proceeding, please check your email for a verification link.',
     'if_not_receive_the_email' => 'If you did not receive the email',
-    'request_another' => 'click here to request another'
+    'request_another' => 'click here to request another',
+    'settings' => 'Settings'
 ];
