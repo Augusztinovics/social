@@ -26,5 +26,7 @@ return [
     'please_check_your_email_for_link.' => 'Before proceeding, please check your email for a verification link.',
     'if_not_receive_the_email' => 'If you did not receive the email',
     'request_another' => 'click here to request another',
-    'settings' => 'Settings'
+    'settings' => 'Settings',
+    'save' => 'Save',
+    'your_password' => 'Password for Confirmation'
 ];

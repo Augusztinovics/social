@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\User\SettingsController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -22,3 +23,6 @@ Route::get('/privacy-policy',[App\Http\Controllers\WelcomeController::class, 'pr
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/user-settings', [SettingsController::class, 'index'])->name('settings.index');
+Route::post('/user-settings/name', [SettingsController::class, 'changeName'])->name('settings.change_name');
+Route::post('/user-settings/email', [SettingsController::class, 'changeEmail'])->name('settings.change_email');

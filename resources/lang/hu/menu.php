@@ -26,5 +26,7 @@ return [
     'please_check_your_email_for_link.' => 'Mielőtt folytatná, kérjük, ellenőrizze e-mailjében, hogy van-e ellenőrző link.',
     'if_not_receive_the_email' => 'Ha nem kapta meg az e-mailt',
     'request_another' => 'ide kattintva kérhet másikat',
-    'settings' => 'Beállítások'
+    'settings' => 'Beállítások',
+    'save' => 'Mentés',
+    'your_password' => 'Jelszó a Megerősítéshez'
 ];
