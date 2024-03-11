@@ -67,6 +67,50 @@
                         </div>
                     </form>
 
+                    <hr class="mt-4 mb-4">
+
+                    <form method="POST" action="{{ route('settings.change_password') }}">
+                        @csrf
+                        <div class="row mb-3">
+                            <label for="new_password" class="col-md-3 col-form-label text-md-end">{{ __('menu.new_password') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="new_password" type="password" class="form-control @error('new_password') is-invalid @enderror" name="new_password" required>
+
+                                @error('new_password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="password-confirm" class="col-md-3 col-form-label text-md-end">{{ __('menu.confirm_password') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="password" class="form-control" name="new_password_confirmation" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="email_confirm_password" class="col-md-3 col-form-label text-md-end">{{ __('menu.your_password') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="email_confirm_password" type="password" class="form-control @error('email_confirm_password') is-invalid @enderror" name="email_confirm_password" value="" required >
+
+                                @error('email_confirm_password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                            <div class="col-md-3 mt-3 mt-md-0">
+                                <button type="submit" class="btn btn-primary">
+                                    {{ __('menu.save') }}
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
                 </div>
             </div>
         </div>

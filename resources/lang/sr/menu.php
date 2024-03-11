@@ -28,5 +28,6 @@ return [
     'request_another' => 'kliknite ovde da zatražite drugu',
     'settings' => 'Podešavanja',
     'save' => 'Snimi',
-    'your_password' => 'Lozinka za Potvrdu'
+    'your_password' => 'Lozinka za Potvrdu',
+    'new_password' => 'Nova Lozinka'
 ];

@@ -28,5 +28,6 @@ return [
     'request_another' => 'click here to request another',
     'settings' => 'Settings',
     'save' => 'Save',
-    'your_password' => 'Password for Confirmation'
+    'your_password' => 'Password for Confirmation',
+    'new_password' => 'New Password'
 ];

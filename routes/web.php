@@ -26,3 +26,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/user-settings', [SettingsController::class, 'index'])->name('settings.index');
 Route::post('/user-settings/name', [SettingsController::class, 'changeName'])->name('settings.change_name');
 Route::post('/user-settings/email', [SettingsController::class, 'changeEmail'])->name('settings.change_email');
+Route::post('/user-settings/password', [SettingsController::class, 'changePassword'])->name('settings.change_password');

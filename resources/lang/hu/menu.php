@@ -28,5 +28,6 @@ return [
     'request_another' => 'ide kattintva kérhet másikat',
     'settings' => 'Beállítások',
     'save' => 'Mentés',
-    'your_password' => 'Jelszó a Megerősítéshez'
+    'your_password' => 'Jelszó a Megerősítéshez',
+    'new_password' => 'Új Jelszó'
 ];

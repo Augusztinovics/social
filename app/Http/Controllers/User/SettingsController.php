@@ -4,7 +4,7 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Hash;
 
 class SettingsController extends Controller
 {
@@ -56,6 +56,23 @@ class SettingsController extends Controller
 
         $user = $request->user();
         $user->email = $request->input('email');
+        $user->save();
+
+        return back();
+    }
+
+    /**
+     * Change the user password.
+     */
+    public function changePassword(Request $request)
+    {
+        $request->validate([
+            'new_password' => ['required', 'string', 'min:8', 'confirmed'],
+            'email_confirm_password' => ['required', 'current_password:web']
+        ]);
+
+        $user = $request->user();
+        $user->password = Hash::make($request->input('new_password'));
         $user->save();
 
         return back();
