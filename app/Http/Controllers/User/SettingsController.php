@@ -68,11 +68,29 @@ class SettingsController extends Controller
     {
         $request->validate([
             'new_password' => ['required', 'string', 'min:8', 'confirmed'],
-            'email_confirm_password' => ['required', 'current_password:web']
+            'password_confirm_password' => ['required', 'current_password:web']
         ]);
 
         $user = $request->user();
         $user->password = Hash::make($request->input('new_password'));
+        $user->save();
+
+        return back();
+    }
+
+    /**
+     * Change the user language.
+     */
+    public function changeLanguage(Request $request)
+    {
+        $request->validate([
+            'language' => ['required', 'string'],
+        ]);
+
+        $lg = $request->input('language', 'en');
+
+        $user = $request->user();
+        $user->local = $lg;
         $user->save();
 
         return back();

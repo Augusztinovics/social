@@ -29,5 +29,13 @@ return [
     'settings' => 'Beállítások',
     'save' => 'Mentés',
     'your_password' => 'Jelszó a Megerősítéshez',
-    'new_password' => 'Új Jelszó'
+    'new_password' => 'Új Jelszó',
+    'settings_lg_title' => 'Használt Nyelv',
+    'settings_lg_des' => 'Itt módosíthatja az alkalmazás nyelvét. A nyelvválasztás hatással van a barátjavaslatra!',
+    'settings_name_title' => 'Neved',
+    'settings_name_des' => 'Itt megváltoztathatja a nevét.',
+    'settings_email_title' => 'Az Email Címed',
+    'settings_email_des' => 'Itt módosíthatja az e-mail címét. Az e-mail cím megváltoztatásához erősítse meg jelszavával! A bejelentkezést befolyásoló email cím módosítása!',
+    'settings_pas_title' => 'Jelszavad',
+    'settings_pas_des' => 'Itt módosíthatja jelszavát. A jelszó megváltoztatásához új jelszót kell megadni, meg kell erősíteni az új jelszót, és meg kell adni a jelenlegi jelszavát!'
 ];

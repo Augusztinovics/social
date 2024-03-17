@@ -29,5 +29,13 @@ return [
     'settings' => 'Podešavanja',
     'save' => 'Snimi',
     'your_password' => 'Lozinka za Potvrdu',
-    'new_password' => 'Nova Lozinka'
+    'new_password' => 'Nova Lozinka',
+    'settings_lg_title' => 'Koristi jezik',
+    'settings_lg_des' => 'Ovde možete promeniti jezik aplikacije. Izbor jezika utiče na preporuku prijatelja!',
+    'settings_name_title' => 'Tvoje ime',
+    'settings_name_des' => 'Ovde možete promeniti svoje ime.',
+    'settings_email_title' => 'Vaša E-Pošta',
+    'settings_email_des' => 'Ovde možete promeniti svoju adresu e-pošte. Da biste promenili adresu e-pošte potrebno je da potvrdite svoju lozinku! Promena e-pošte utiče na prijavu!',
+    'settings_pas_title' => 'Vaša Lozinka',
+    'settings_pas_des' => 'Ovde možete promeniti svoju lozinku. Da biste promenili lozinku, potrebno je da date novu lozinku, potvrdite novu lozinku i dajte svoju trenutnu lozinku!'
 ];

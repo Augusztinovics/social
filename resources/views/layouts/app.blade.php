@@ -21,7 +21,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm border-bottom">
             <div class="container">
                 <a href="{{ url('/home') }}" class="navbar-brand">
                     <img src="{{ asset('img/ajlogo_sm.png') }}" alt="icon" width="32">
