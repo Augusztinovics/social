@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\User\ProfileController;
 use App\Http\Controllers\User\SettingsController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -28,3 +29,5 @@ Route::post('/user-settings/name', [SettingsController::class, 'changeName'])->n
 Route::post('/user-settings/email', [SettingsController::class, 'changeEmail'])->name('settings.change_email');
 Route::post('/user-settings/password', [SettingsController::class, 'changePassword'])->name('settings.change_password');
 Route::post('/user-settings/language', [SettingsController::class, 'changeLanguage'])->name('settings.change_language');
+
+Route::get('/user-profile', [ProfileController::class, 'index'])->name('profile.index');

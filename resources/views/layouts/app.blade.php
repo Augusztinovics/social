@@ -39,6 +39,9 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-3">
+                            <a href="{{ route('profile.index') }}" class="dropdown-item mt-2">{{ __('menu.settings') }}</a>
+                        </li>
                         <!-- Authentication Links -->
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

@@ -19,10 +19,13 @@ class HomeController extends Controller
     /**
      * Show the application dashboard.
      *
-     * @return \Illuminate\Contracts\Support\Renderable
+     * @return \Illuminate\Contracts\Support\Renderable | Redirect
      */
-    public function index()
+    public function index(Request $request)
     {
+        if (!$request->user()->profile) {
+            return redirect(route('profile.index'));
+        }
         return view('home');
     }
 }
