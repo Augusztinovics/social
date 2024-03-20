@@ -26,4 +26,12 @@ class Profile extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    /**
+     * Return the profile image path
+     */
+    public function getProfilePhotoUrl()
+    {
+        return public_path('profile/' . $this->user->id . '/' . $this->profile_photo);
+    }
 }

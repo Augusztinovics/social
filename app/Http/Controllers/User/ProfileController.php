@@ -32,4 +32,20 @@ class ProfileController extends Controller
         return view('user.profile');
     }
 
+     /**
+     * Upload profile photo.
+     */
+    public function uploadProfilePhoto(Request $request)
+    {
+        $request->validate([
+            'name' => ['required', 'string', 'min:1', 'max:255'],
+        ]);
+
+        $user = $request->user();
+        
+        $user->save();
+
+        return back();
+    }
+
 }

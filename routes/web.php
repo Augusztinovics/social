@@ -31,3 +31,4 @@ Route::post('/user-settings/password', [SettingsController::class, 'changePasswo
 Route::post('/user-settings/language', [SettingsController::class, 'changeLanguage'])->name('settings.change_language');
 
 Route::get('/user-profile', [ProfileController::class, 'index'])->name('profile.index');
+Route::post('/upload/user-profile-photo', [ProfileController::class, 'uploadProfilePhoto'])->name('profile.photo_upload');
