@@ -32,6 +32,9 @@ class Profile extends Model
      */
     public function getProfilePhotoUrl()
     {
-        return public_path('profile/' . $this->user->id . '/' . $this->profile_photo);
+        if ($this->profile_photo) {
+            return public_path($this->user->id . '/profile/' . $this->profile_photo);
+        }
+        return null;
     }
 }
