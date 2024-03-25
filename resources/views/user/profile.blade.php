@@ -20,18 +20,23 @@
                     @csrf
                     <div class="row">
 
-                        <div class="col-md-6">
-                            <input type="file" name="image" class="form-control @error('image') is-invalid @enderror border-top-0 border-end-0 border-start-0 rounded-0 border-dark">
+                        <div class="col-md-4">
+                            <label for="image" class="profile-upload-select">Select Image</label>
+                            <input type="file" name="image" id="image" accept="image/png, image/jpeg" class="form-control @error('image') is-invalid @enderror border-dark"  required style="display: none;"/>
+
+                            @error('image')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
 
-                        @error('image')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
+                       <div class="col-md-4">
+                            <img src="" alt="No Image Selected" id="image_preview" width="75px">
+                       </div>
 
-                        <div class="col-md-6">
-                            <button type="submit" class="btn btn-success">Upload</button>
+                        <div class="col-md-4">
+                            <button type="submit" id="image_submit" class="btn btn-primary" disabled>Upload</button>
                         </div>
 
                     </div>
