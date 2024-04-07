@@ -37,5 +37,8 @@ return [
     'settings_email_title' => 'Your Email',
     'settings_email_des' => 'Here you can change your email address. To change the email address need to confirm with your password! Changing the email effecting the login!',
     'settings_pas_title' => 'Your Password',
-    'settings_pas_des' => 'Here you can change your password. To change the password need to give a new password, confirm the new password, and give your current password!'
+    'settings_pas_des' => 'Here you can change your password. To change the password need to give a new password, confirm the new password, and give your current password!',
+    'upload' => 'Upload',
+    'select_image' => 'Select Image',
+    'no_image_selected' => 'No Image Selected'
 ];

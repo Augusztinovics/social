@@ -37,5 +37,8 @@ return [
     'settings_email_title' => 'Az Email Címed',
     'settings_email_des' => 'Itt módosíthatja az e-mail címét. Az e-mail cím megváltoztatásához erősítse meg jelszavával! A bejelentkezést befolyásoló email cím módosítása!',
     'settings_pas_title' => 'Jelszavad',
-    'settings_pas_des' => 'Itt módosíthatja jelszavát. A jelszó megváltoztatásához új jelszót kell megadni, meg kell erősíteni az új jelszót, és meg kell adni a jelenlegi jelszavát!'
+    'settings_pas_des' => 'Itt módosíthatja jelszavát. A jelszó megváltoztatásához új jelszót kell megadni, meg kell erősíteni az új jelszót, és meg kell adni a jelenlegi jelszavát!',
+    'upload' => 'Feltöltés',
+    'select_image' => 'Válasszon Képet',
+    'no_image_selected' => 'Nincs Kép Kiválasztva'
 ];

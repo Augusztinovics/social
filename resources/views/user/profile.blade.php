@@ -7,40 +7,7 @@
             <div class="card border-dark">
                 <div class="card-header border-dark text-center"><h2>{{ __('menu.settings') }}</h2></div>
 
-                <div class="card-body">
-                    @if(Auth::user()->profile->profile_photo)
-                        <div class="w-full" style="height: 400px; background: #ffffff url('uploads/{{Auth::user()->id }}/profile/{{Auth::user()->profile->profile_photo}}') no-repeat center;"></div>
-                    @else
-                        <div class="w-full bg-secondary" style="height: 400px;"></div>
-                    @endif
-
-                </div>
-
-                <form action="{{ route('profile.photo_upload') }}" method="POST" enctype="multipart/form-data">
-                    @csrf
-                    <div class="row">
-
-                        <div class="col-md-4">
-                            <label for="image" class="profile-upload-select">Select Image</label>
-                            <input type="file" name="image" id="image" accept="image/png, image/jpeg" class="form-control @error('image') is-invalid @enderror border-dark"  required style="display: none;"/>
-
-                            @error('image')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
-
-                       <div class="col-md-4">
-                            <img src="" alt="No Image Selected" id="image_preview" width="75px">
-                       </div>
-
-                        <div class="col-md-4">
-                            <button type="submit" id="image_submit" class="btn btn-primary" disabled>Upload</button>
-                        </div>
-
-                    </div>
-                </form>
+                <profile-image-upload :user="{{ json_encode(Auth::user()) }}" :user-profile="{{ json_encode(Auth::user()->profile) }}" :lng-upload="{{ json_encode(__('menu.upload')) }}" :lng-no-img="{{ json_encode(__('menu.no_image_selected')) }}" :lng-select-img="{{ json_encode(__('menu.select_image')) }}" ></profile-image-upload>
                 <div style="height: 30px;"></div>
             </div>
         </div>
