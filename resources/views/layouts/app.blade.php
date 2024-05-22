@@ -40,7 +40,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item me-3">
-                            <a href="{{ route('profile.index') }}" class="dropdown-item mt-2">{{ __('menu.settings') }}</a>
+                            <a href="{{ route('profile.index') }}" class="dropdown-item mt-2">{{ __('menu.profile') }}</a>
                         </li>
                         <!-- Authentication Links -->
                         <li class="nav-item dropdown">

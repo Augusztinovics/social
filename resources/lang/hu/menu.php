@@ -40,5 +40,8 @@ return [
     'settings_pas_des' => 'Itt módosíthatja jelszavát. A jelszó megváltoztatásához új jelszót kell megadni, meg kell erősíteni az új jelszót, és meg kell adni a jelenlegi jelszavát!',
     'upload' => 'Feltöltés',
     'select_image' => 'Válasszon Képet',
-    'no_image_selected' => 'Nincs Kép Kiválasztva'
+    'no_image_selected' => 'Nincs Kép Kiválasztva',
+    'profile' => 'Profilod',
+    'profile_des_title' => 'Magadról',
+    'profile_des_des' => 'Írj magadról pár szót'
 ];

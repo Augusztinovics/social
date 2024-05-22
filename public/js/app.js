@@ -5136,8 +5136,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
@@ -27409,9 +27407,7 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "card-body" }, [
-      _c("div", { staticClass: "w-full", style: _vm.photoStyle }),
-    ]),
+    _c("div", { staticClass: "w-full", style: _vm.photoStyle }),
     _vm._v(" "),
     _c(
       "form",

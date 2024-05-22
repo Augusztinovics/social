@@ -61,4 +61,21 @@ class ProfileController extends Controller
         return back();
     }
 
+    /**
+     * Change user description
+     */
+    public function changeDes(Request $request)
+    {
+
+        $request->validate([
+            'des' => ['required', 'string', 'min:1'],
+        ]);
+
+        $profile = $request->user()->profile;
+        $profile->user_des = $request->input('des');
+
+        $profile->save();
+
+        return back();
+    }
 }

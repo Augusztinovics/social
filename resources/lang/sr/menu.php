@@ -40,5 +40,8 @@ return [
     'settings_pas_des' => 'Ovde možete promeniti svoju lozinku. Da biste promenili lozinku, potrebno je da date novu lozinku, potvrdite novu lozinku i dajte svoju trenutnu lozinku!',
     'upload' => 'Otpremiti',
     'select_image' => 'Izaberite Slika',
-    'no_image_selected' => 'Slika nije izabrana'
+    'no_image_selected' => 'Slika nije izabrana',
+    'profile' => 'Profil',
+    'profile_des_title' => 'O sebi',
+    'profile_des_des' => 'Napišite nekoliko reči o sebi'
 ];

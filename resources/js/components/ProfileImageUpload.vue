@@ -1,8 +1,6 @@
 <template>
     <div>
-        <div class="card-body">
-            <div class="w-full" :style="photoStyle"></div>
-        </div>
+        <div class="w-full" :style="photoStyle"></div>
 
         <form @submit="submit" enctype="multipart/form-data">
             <div class="row">

@@ -40,5 +40,8 @@ return [
     'settings_pas_des' => 'Here you can change your password. To change the password need to give a new password, confirm the new password, and give your current password!',
     'upload' => 'Upload',
     'select_image' => 'Select Image',
-    'no_image_selected' => 'No Image Selected'
+    'no_image_selected' => 'No Image Selected',
+    'profile' => 'Profile',
+    'profile_des_title' => 'About Yourself',
+    'profile_des_des' => 'Write a few word about yourself'
 ];

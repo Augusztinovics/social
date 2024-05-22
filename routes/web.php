@@ -32,3 +32,4 @@ Route::post('/user-settings/language', [SettingsController::class, 'changeLangua
 
 Route::get('/user-profile', [ProfileController::class, 'index'])->name('profile.index');
 Route::post('/upload/user-profile-photo', [ProfileController::class, 'uploadProfilePhoto'])->name('profile.photo_upload');
+Route::post('/user-profile/des', [ProfileController::class, 'changeDes'])->name('profile.change_des');
